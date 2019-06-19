@@ -24,11 +24,10 @@ So, in the calculation inception block isn't considered as the number of channel
 
 
 
-![network](D:\Srinidhi\EVA\Week 7\network.PNG)
+
 
 The final receptive field as per the calculation mentioned below is found to be 267.
 
 
 
-![calculations](D:\Srinidhi\EVA\Week 7\calculations.PNG)
 
