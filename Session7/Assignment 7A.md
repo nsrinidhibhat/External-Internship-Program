@@ -31,3 +31,5 @@ The final receptive field as per the calculation mentioned below is found to be 
 
 
 
+
+
