@@ -15,6 +15,7 @@ The calculations for Receptive field is as follows- Here r out refers to the out
 
 
 The table provided is to which the final RF has to be calculated.
+[IMAGE - network.png]
 
 **Kernel size (7x7) and stride (2)** is provided, as seen in the first row of 2nd column (patch size/stride)
 
@@ -28,7 +29,7 @@ So, in the calculation inception block isn't considered as the number of channel
 
 The final receptive field as per the calculation mentioned below is found to be 267.
 
-
+[IMAGE - calculations.png]
 
 
 
