@@ -2,7 +2,7 @@
 
 1. What are Channels and Kernels (according to EVA)?
 
-   **Kernels**:  I can think of a kernel as a feature extractor. A unit which tries to distinguish one feature from another. Suppose in a problem statement such as cats vs dogs, ( i.e., when you're teaching a machine to learn and distinguish features) you could choose a kernel to distinguish both based on *the structure of their nose/ mouth*. Now this becomes a kernel for that particular feature. All layman terms!
+   **Kernels**:  Kernel is a feature extractor. A unit which tries to distinguish one feature from another. Suppose in a problem statement such as cats vs dogs, ( i.e., when you're teaching a machine to learn and distinguish features) you could choose a kernel to distinguish both based on *the structure of their nose/ mouth if your subject is a person*. Now this becomes a kernel for that particular feature. Collecting these distinguished features is the work of Kernels.
 
    ![Image result for kernel in neural network](https://i.stack.imgur.com/9Iu89.gif)
 
@@ -12,27 +12,22 @@
 
    **Channels**: Collection of kernels. Collection of features.
 
-   A channel in a TV, channelized to show news or sport or many other kinds of features that is adapted to the genre of content it's been showing. A news channel doesn't show series or a sports channel will not have other political news, or anything of that sort. So after feature extraction, many collection of features make up channels and are all provided to the machine for it to learn the entire possibilities of features that exist.
+   A channel in a TV, channelized to show news or sport or many other kinds of features that is adapted to the genre of content it's been showing. Similarly, after the feature extraction, many collection of features make up channels and are all provided to our model for it to mostly learn the entire feature set that exists.
 
-   Enough ranting!
 
    This image below is a normal color image, thought of as having RGB components.
 
-   ![Image result for channels in cnn](http://corochann.com/wp-content/uploads/2017/04/cnn_diagram_notation.png)
-
- 
-
+     ![Image result for channels in CNN](https://user-images.githubusercontent.com/15133695/173181307-daa2f894-d49f-4587-b5e7-c330f6d9cfd9.png)
 
 
 2. Why should we only (well mostly) use 3x3 Kernels?
 
    Mainly because of the following reasons- 
 
-   - Smaller filter looks at very few pixels at a time hence it has small receptive field. Where as large filter will look at lot of pixel hence it will have large receptive field
-   - When we work with larger filters we tends to search for only predominant features and that tends to rule out the possibilities of smaller, yet an important one.
-   - Takes a lot of processing but considers most of the features, which you might require or you might not. *Or maybe the Einstein in you glows up and you use up the feature, which you thought would be unhelpful before*
-   - Can't use 1x1 because it considers all the pixel back again and doesn't help lower the configuration from 199x199 to 1x1 !
-   - All the big boys in the game like **Google** or **NVidia** have optimized processing through 3x3.. Can't help 
+   - Smaller filter looks at very few pixels at a time hence it has small receptive field. Where as large filter will look at lot of pixels at once, hence it will have large receptive field
+   - When we work with larger (greater than 3x3) filters we tend to search for only the predominant features and that tends to rule out the possibilities of smaller, yet an important one.
+   - Takes a lot of processing but considers most of the features, which might be of use. 
+   - Can't use 1x1 because it considers all the pixels and doesn't help lower the dimension of the image.
 
 
 
